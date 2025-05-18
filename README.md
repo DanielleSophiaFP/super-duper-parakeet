@@ -21,7 +21,7 @@ This project is implemented in **Java**.
 
 ## 🏗 **File Structure**  
 
-```
+
 ## 🚧 **Project Status**  
 🔧 **In progress**  
 
