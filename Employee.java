@@ -1,19 +1,20 @@
 import java.util.List;
 
 public class Employee {
-    //Attributes
+    // Attributes
     private String employeeID;
     private String name;
     private String department;
     private String phoneNumber;
     private String shift;
     private String address;
-    
-    //References to other classes
+
+    // References to other classes
     private Account account;
     private Salary salary;
     private List<Attendance> attendance;
-    
+
+    // Constructor
     public Employee(String employeeID, String name, String department, String phoneNumber, String shift, String address, Account account, Salary salary, List<Attendance> attendance) {
         this.employeeID = employeeID;
         this.name = name;
@@ -25,77 +26,81 @@ public class Employee {
         this.salary = salary;
         this.attendance = attendance;
     }
-    
-    //Getters and Setters
+
+    // Getters and Setters
     public Account getAccount() {
         return account;
     }
-    
+
     public void setAccount(Account account) {
-            this.account = account;
+        this.account = account;
     }
-    
+
     public Salary getSalary() {
-        return Salary;
+        return salary;
     }
-    
+
     public void setSalary(Salary salary) {
         this.salary = salary;
     }
-    
-    public void setAttendanceRecords(List<Attendance> attendance) {
+
+    public List<Attendance> getAttendance() {
+        return attendance;
+    }
+
+    public void setAttendance(List<Attendance> attendance) {
         this.attendance = attendance;
     }
-    
+
     public String getEmployeeID() {
         return employeeID;
-    } 
-    
+    }
+
     public void setEmployeeID(String employeeID) {
         this.employeeID = employeeID;
     }
-    
+
     public String getName() {
         return name;
     }
-    
+
     public void setName(String name) {
         this.name = name;
     }
-    
+
     public String getDepartment() {
         return department;
     }
-    
-    public void setDepartment(String department){
+
+    public void setDepartment(String department) {
         this.department = department;
     }
-    
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
-    
-    public void setPhoneNumber(String phoneNumber){
+
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    
+
     public String getShift() {
         return shift;
     }
-    
+
     public void setShift(String shift) {
         this.shift = shift;
     }
-    
+
     public String getAddress() {
         return address;
     }
-    
+
     public void setAddress(String address) {
         this.address = address;
     }
-    
-    //Methods    
+
+    // Methods
     public void login() {
         if (account != null) {
             account.login();
@@ -103,7 +108,7 @@ public class Employee {
             System.out.println("No account linked to employee.");
         }
     }
-    
+
     public String viewSalary() {
         if (salary != null) {
             return salary.getSalary();
@@ -111,7 +116,7 @@ public class Employee {
             return "No salary information available.";
         }
     }
-    
+
     public String viewAttendance() {
         if (attendance != null && !attendance.isEmpty()) {
             StringBuilder sb = new StringBuilder("Attendance Records:\n");
@@ -121,9 +126,9 @@ public class Employee {
             return sb.toString();
         } else {
             return "No attendance records available.";
-    } 
-}
-    
+        }
+    }
+
     public void displayEmployeeInfo() {
         System.out.println("Employee ID: " + employeeID);
         System.out.println("Name: " + name);
@@ -132,4 +137,4 @@ public class Employee {
         System.out.println("Shift: " + shift);
         System.out.println("Address: " + address);
     }
-}    
+}
