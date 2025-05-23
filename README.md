@@ -1,14 +1,11 @@
 # **MotorPH Employee Application**
 
-## 📌 Project Overview  
- 
+## 📌 **Project Overview**
 
-This project is implemented in **Java**.
 
 ---
 
 ## 📊 **Expected Output**  
-
 
 ## ⚙️ **Features**  
 
@@ -17,13 +14,11 @@ This project is implemented in **Java**.
 
 ## 📂 **File Handling**  
 
+
 ---
 
-## 🏗 **File Structure**  
-
-
 ## 🚧 **Project Status**  
-🔧 **In progress**  
+🔧 **In-progress**  
 
 ### 🔍 **Things to Improve**  
 -
@@ -38,11 +33,21 @@ This project is implemented in **Java**.
 | Maila Yruma | [@maila02](https://github.com/maila02) |
 | James Angeles | [@Jamesangeles-byte](https://github.com/Jamesangeles-byte) |
 | Edward Joseph Basilonia | [@EJB0624](https://github.com/EJB0624) |
-| Joyce Ann Rodaje | []() |
+| Joyce Ann Rodaje | [@yukmwiu](https://github.com/yukmwiu)|
 
 ---
 
 🎯 **How to Use:**  
+
+1️⃣ Clone this repository  
+```sh
+https://github.com/DanielleSophiaFP/super-duper-parakeet.git
+```
+2️⃣ Run **MilestoneGUI**
+
+
+
+
 
 
 
